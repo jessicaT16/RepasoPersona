@@ -1,10 +1,14 @@
-﻿using System;
+using sistem :
 
-namespace RepasoPersona.Core
-{
-    public class Persona : 
-    {
- 
+        Public void debitar
+        {
+            double monto = 500.45;
+            double debito = 135.45;
+            Pepito.Acreditar(monto);
+            Pepito.Debitar(debito);
+
+            Assert.Equal(monto - debito, Pepito.Efectivo, 2);
+        }
 
         public void Debitar(double monto)
         {
